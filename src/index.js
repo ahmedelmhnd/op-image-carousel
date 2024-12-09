@@ -1,4 +1,4 @@
-import { nextImage, showSlide } from "./carousel";
+import { autoSlides, nextImage, showSlide } from "./carousel";
 import "./styles.css";
 
 const cat = "cat";
@@ -14,3 +14,7 @@ const right = document.querySelector(".right");
 right.addEventListener("click", () => {
   i = nextImage(i);
 });
+
+autoSlides(0);
+
+
